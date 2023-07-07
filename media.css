@@ -1,23 +1,185 @@
-@media (max-width: 554px) {
+@media (max-width: 312px){
     .prev{
         gap: 0.5rem;
     }
-    .icon{ width: 1.5rem; height: 1.5rem;}
-    .book_now, .book_now a{
-        width: 30%;
-        font-size: medium;
+    .welc{
+        font-size: small;
+    }
+    nav ul{
+        width: 100%;
+    }
+    ul li, li a{font-size: small;}
+    .book_line{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .book_now{
+        width: 4rem;
+    }
+    #main > div > div.book_line > li{
+        width: 40%;
+    }
+    .icon{
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+    }
+    .b_info, .r_info {
+        padding: 1rem 1rem 1rem 1.2rem;
+    }
+    .b_info h1, .r_info h1{
+        font-size: x-large;
+    }
+    #reviews > div.items > div.item {
+        font-size: 5px;
+        width: 40%;
+        height: 20%;
+    }
+    #reviews > div.items > div.item > div.photo{ 
+        width: 75%; 
+        height: 100%;
+    }
+    .l_More{
+        font-size: xx-small;
+        padding: 0.5rem;
+        margin-right: 0;
+    }
+    .review_stat{
+        width: 100%;
+        height: auto;
+    }
+    #cal{ display: none;}
+}
+@media (min-width: 312px) and (max-width: 365px){
+    .prev{
+        gap: 0.5rem;
+    }
+    .welc{
+        font-size: small;
+    }
+    ul li, li a{font-size: small;}
+    .book_line{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    #main > div > div.book_line > li{
+        width: 40%;
+    }
+    .icon{
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+    }
+    .b_info, .r_info {
+        padding: 3rem 1rem 1rem 1.2rem;
+    }
+    #reviews > div.items > div.item {
+        font-size: 5px; 
+        margin: auto;
+    }
+    #reviews > div.items > div.item > div.photo{ 
+        width: 75%; 
+        height: 100%;
+    }
+    .l_More{
+        font-size: 0.5rem;
+    }
+    #cal{ display: none;}
+}
+@media (min-width: 366px) and (max-width: 411px){
+    .prev{
+        gap: 0.5rem;
+    }
+    .welc{
+        font-size: small;
+    }
+    .book_line{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .icon{ 
+        width: 1rem;
+        height: 1rem; 
+        margin: 0;
+    }
+    ul li, li a{font-size: small;}
+
+    .b_info, .r_info {
+        padding: 3rem 1rem 1rem 1.2rem;
+    }
+    #reviews > div.items > div.item {
+        font-size: 6px; 
+        margin: auto;
+    }
+    #reviews > div.items > div.item > div.photo{ 
+        width: 65%; 
+        height: 100%;
+    }
+    .book_line{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .l_more{
+        font-size: 0.5rem;
+    }
+    #cal{ display: none;}
+}
+@media (min-width: 412px) and (max-width: 465px) {
+    .prev{
+        gap: 0.5rem;
+    }
+    .icon{ 
+        width: 1.5rem; 
+        height: 1.5rem;
+    }
+    ul li, li a{font-size: small;}
+    .book_now{
+        width: 50%;
+    }
+    .book_line{
+        flex-direction: column;
+        gap: 0.5rem;
     }
     .b_info, .r_info {
         padding: 3rem 1rem 1rem 1.2rem;
     }
     .l_More{ padding: 0.4rem; font-size: 0.7rem;}
-    #reviews > div.items > div.item {font-size: x-small; margin: auto;}
-    #reviews > div.items > div.item > div.photo{ width: 40%;}
+    #reviews > div.items > div.item {
+        font-size: 5px;
+        width: 12rem;
+        height: 6rem;
+    }
+    #reviews > div.items > div.item > div.photo{ 
+        width: 49%; 
+        height: 100%;
+    }
+    #cal{ display: none;}
+}
+@media (min-width: 466px) and (max-width: 554px) {
+    .prev{
+        gap: 0.5rem;
+    }
+    .icon{ width: 1.5rem; height: 1.5rem;}
+    ul li, li a{font-size: small;}
+    .book_now{
+        width: 15%;
+    }
+    .b_info, .r_info {
+        padding: 3rem 1rem 1rem 1.2rem;
+    }
+    .l_More{ padding: 0.4rem; font-size: 0.7rem;}
+    #reviews > div.items > div.item {font-size: xx-small; margin: auto;}
+    #reviews > div.items > div.item > div.photo{ width: 4.5rem; height: 4.7rem;}
     #cal{ display: none;}
   }
 @media (min-width: 555px) and (max-width: 768px) {
+    
     .prev{
         gap: 0.5rem;
+    }
+    ul li, li a{font-size: small;}
+    .book_now{
+        width: 15%;
     }
     #main > div > div.book_line > li{
         width: 8rem;
@@ -32,7 +194,7 @@
     }
     #aparts > div.b_info > button{ padding: 0.4rem; font-size: 0.7rem;}
     #reviews > div.items > div.item {font-size: x-small; margin: auto;}
-    #reviews > div.items > div.item > div.photo{ width: 60%;}
+    #reviews > div.items > div.item > div.photo{ width: 4.5rem; height: 4.5rem;}
   }
   
   /* Медіа-запит для пристроїв з шириною екрану від 768px до 992px */
