@@ -1,0 +1,46 @@
+@media (max-width: 554px) {
+    .prev{
+        gap: 0.5rem;
+    }
+    .icon{ width: 1.5rem; height: 1.5rem;}
+    .book_now, .book_now a{
+        width: 30%;
+        font-size: medium;
+    }
+    .b_info, .r_info {
+        padding: 3rem 1rem 1rem 1.2rem;
+    }
+    .l_More{ padding: 0.4rem; font-size: 0.7rem;}
+    #reviews > div.items > div.item {font-size: x-small; margin: auto;}
+    #reviews > div.items > div.item > div.photo{ width: 40%;}
+    #cal{ display: none;}
+  }
+@media (min-width: 555px) and (max-width: 768px) {
+    .prev{
+        gap: 0.5rem;
+    }
+    #main > div > div.book_line > li{
+        width: 8rem;
+        font-size: small;
+    }
+    #main > div > div.book_line > .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #aparts > div.b_info {
+        padding: 3rem 1rem 1rem 1.2rem;
+    }
+    #aparts > div.b_info > button{ padding: 0.4rem; font-size: 0.7rem;}
+    #reviews > div.items > div.item {font-size: x-small; margin: auto;}
+    #reviews > div.items > div.item > div.photo{ width: 60%;}
+  }
+  
+  /* Медіа-запит для пристроїв з шириною екрану від 768px до 992px */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* Стилі, що застосовуються для пристроїв з шириною екрану від 768px до 992px */
+  }
+  
+  /* Медіа-запит для пристроїв з шириною екрану понад 992px */
+  @media (min-width: 992px) {
+    /* Стилі, що застосовуються для пристроїв з шириною екрану понад 992px */
+  }
