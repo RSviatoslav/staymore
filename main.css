@@ -9,19 +9,30 @@ body{
     flex-direction: column;
     font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
 }
-header, nav, ul{
+header{
+    display: inline-block;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
     height: 10vh;
     width: 100%;
-    background-color: transparent;
+    transition: background 0.6s ease-in-out;
+}
+.menu{display: none;}
+
+nav:hover{background-color: #00000080;}
+nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    width: 100%;
+    height: auto;
     gap: 1.5rem;
     align-items: center;
-    position: fixed;
+    padding-right: 1.5rem;
 }
-nav{background-color: transparent; padding-right: 3rem; transition: background 0.6s ease-in-out;}
-nav:hover{background-color: #00000080;}
 li, a{
     text-decoration: none;
     list-style: none;
@@ -81,7 +92,6 @@ nav a{ padding: 1rem;}
     height: auto;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem;
 }
 .icon{
     display: flex;
@@ -174,6 +184,8 @@ nav a{ padding: 1rem;}
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 .reviews .review_stat{
     background-color: aliceblue;
@@ -188,16 +200,16 @@ nav a{ padding: 1rem;}
     border: 0.1rem solid white;
     border-radius: 5rem;
     text-align: center;
-    font-size: large;
+    font-size: medium;
 }
 .reviews .item .photo{
-    max-width: 30%;
-    height: 100%;
+    width: 8rem;
+    height: 8rem;
     object-fit: contain;
     overflow: hidden;
     background-color: aqua;
     border-right: 0.1rem solid white;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 .reviews .item img{
     width: 100%;
