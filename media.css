@@ -1,11 +1,20 @@
 @media (min-width: 200px) and (max-width: 780px) {
-    nav{ flex-wrap: wrap;}
-    nav ul{
-        display: none;
+    nav{
+        display: flex; 
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;}
+    nav ul{display: none;
         flex-direction: column;
-        align-items: flex-end;
         gap: 1rem;
-        padding-right: 0.5rem;
+        padding-right: 1rem;
+    }
+    ul li{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 1px solid white;
     }
     ul li a{
         font-size: small;
@@ -16,8 +25,9 @@
         width: 100%;
         background-color: transparent;
         justify-content: flex-end;
-        border: none;
-        margin: 1.5rem 1.5rem 0 0;;
+        align-items: center;
+        border:none;
+        padding: 2rem;
     }
     .book_now{ margin-right: 0.5rem;}
     .book_now a{
@@ -56,9 +66,10 @@
         font-size: x-large;
     }
     #reviews > div.items > div.item {
-        font-size: 0.45rem;
+        font-size: xx-small;
         width: 8rem;
         height: 4rem;
+        margin: auto;
     }
     #reviews > div.items > div.item > div.photo{ 
         width: 49%; 
@@ -104,9 +115,10 @@
         font-size: x-large;
     }
     #reviews > div.items > div.item {
-        font-size: 5px;
+        font-size: xx-small;
         width: 40%;
         height: 20%;
+        margin: auto;
     }
     #reviews > div.items > div.item > div.photo{ 
         width: 75%; 
@@ -145,24 +157,16 @@
     .b_info, .r_info {
         padding: 3rem 1rem 1rem 1.2rem;
     }
-    #reviews > div.items > div.item {
-        font-size: 5px; 
-        margin: auto;
-    }
-    #reviews > div.items > div.item > div.photo{ 
-        width: 75%; 
-        height: 100%;
-    }
     .l_More{
         font-size: 0.5rem;
     }
     #reviews > div.items > div.item {
-        font-size: 5px;
-        width: 10rem;
-        height: 5rem;
+        font-size: xx-small;
+        width: 47%;
+        margin: auto;
     }
     #reviews > div.items > div.item > div.photo{ 
-        width: 49%; 
+        width: 55%; 
         height: 100%;
     }
     #cal{ display: none;}
@@ -187,14 +191,6 @@
     .b_info, .r_info {
         padding: 3rem 1rem 1rem 1.2rem;
     }
-    #reviews > div.items > div.item {
-        font-size: 6px; 
-        margin: auto;
-    }
-    #reviews > div.items > div.item > div.photo{ 
-        width: 65%; 
-        height: 100%;
-    }
     .book_line{
         flex-direction: column;
         gap: 0.5rem;
@@ -203,12 +199,12 @@
         font-size: 0.5rem;
     }
     #reviews > div.items > div.item {
-        font-size: 5px;
-        width: 10rem;
-        height: 5rem;
+        font-size: xx-small;
+        width: 47%;
+        margin: auto;
     }
     #reviews > div.items > div.item > div.photo{ 
-        width: 49%; 
+        width: 55%; 
         height: 100%;
     }
     #cal{ display: none;}
@@ -233,9 +229,10 @@
     }
     .l_More{ padding: 0.4rem; font-size: 0.7rem;}
     #reviews > div.items > div.item {
-        font-size: 5px;
+        font-size: x-small;
         width: 12rem;
         height: 6rem;
+        margin: auto;
     }
     #reviews > div.items > div.item > div.photo{ 
         width: 49%; 
@@ -258,8 +255,8 @@
         padding: 3rem 1rem 1rem 1.2rem;
     }
     .l_More{ padding: 0.4rem; font-size: 0.7rem;}
-    #reviews > div.items > div.item {font-size: xx-small; margin: auto; width: 15rem;}
-    #reviews > div.items > div.item > div.photo{ width: 45%;}
+    #reviews > div.items > div.item {font-size: xx-small; margin: auto; height: 17%; width: 35%;}
+    #reviews > div.items > div.item > div.photo{ width: 45%; height: 100%;}
     #cal{ display: none;}
   }
 @media (min-width: 555px) and (max-width: 768px) {
@@ -282,13 +279,20 @@
         padding: 3rem 1rem 1rem 1.2rem;
     }
     #aparts > div.b_info > button{ padding: 0.4rem; font-size: 0.7rem;}
+@media (min-width: 555px) and (max-width: 608px) {
     #reviews > div.items > div.item {font-size: x-small; margin: auto;}
-    #reviews > div.items > div.item > div.photo{ width: 4.5rem; height: 4.5rem;}
+    #reviews > div.items > div.item > div.photo{ width: 50%; height: 100%;}
+}
   }
+  @media (min-width: 608px) and (max-width: 768px) {
+    #reviews > div.items > div.item {font-size: x-small; margin: auto;}
+    #reviews > div.items > div.item > div.photo{ width: 50%; height: 100%;}
+}
   
   /* Медіа-запит для пристроїв з шириною екрану від 768px до 992px */
   @media (min-width: 768px) and (max-width: 992px) {
-    /* Стилі, що застосовуються для пристроїв з шириною екрану від 768px до 992px */
+    #reviews > div.items > div.item > div.photo{ width: 24%; height: 100%;}
+    #reviews > div.items > div.item { width: 33.1%; height: 15%;}
   }
   
   /* Медіа-запит для пристроїв з шириною екрану понад 992px */
